@@ -16,8 +16,8 @@ CAMINHO_SALVAR_MODELO = os.path.join(project_root, 'lib', 'models', 'modelo_tea_
 IMG_WIDTH, IMG_HEIGHT = 224, 224
 TAMANHO_IMAGEM = (IMG_WIDTH, IMG_HEIGHT)
 
-TAMANHO_LOTE = 32 
-NUM_EPOCAS = 20   
+TAMANHO_LOTE = 50
+NUM_EPOCAS = 45
 
 if not os.path.exists(DIRETORIO_DATASET):
     print(f"Erro: O diretório '{DIRETORIO_DATASET}' não foi encontrado.")
