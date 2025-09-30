@@ -1,0 +1,414 @@
+[
+    {
+        "label": "tensorflow",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tensorflow",
+        "description": "tensorflow",
+        "detail": "tensorflow",
+        "documentation": {}
+    },
+    {
+        "label": "ImageDataGenerator",
+        "importPath": "tensorflow.keras.preprocessing.image",
+        "description": "tensorflow.keras.preprocessing.image",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras.preprocessing.image",
+        "documentation": {}
+    },
+    {
+        "label": "MobileNetV2",
+        "importPath": "tensorflow.keras.applications",
+        "description": "tensorflow.keras.applications",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras.applications",
+        "documentation": {}
+    },
+    {
+        "label": "Input",
+        "importPath": "tensorflow.keras.layers",
+        "description": "tensorflow.keras.layers",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras.layers",
+        "documentation": {}
+    },
+    {
+        "label": "Dense",
+        "importPath": "tensorflow.keras.layers",
+        "description": "tensorflow.keras.layers",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras.layers",
+        "documentation": {}
+    },
+    {
+        "label": "GlobalAveragePooling2D",
+        "importPath": "tensorflow.keras.layers",
+        "description": "tensorflow.keras.layers",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras.layers",
+        "documentation": {}
+    },
+    {
+        "label": "Dropout",
+        "importPath": "tensorflow.keras.layers",
+        "description": "tensorflow.keras.layers",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras.layers",
+        "documentation": {}
+    },
+    {
+        "label": "Model",
+        "importPath": "tensorflow.keras.models",
+        "description": "tensorflow.keras.models",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras.models",
+        "documentation": {}
+    },
+    {
+        "label": "Adam",
+        "importPath": "tensorflow.keras.optimizers",
+        "description": "tensorflow.keras.optimizers",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras.optimizers",
+        "documentation": {}
+    },
+    {
+        "label": "Precision",
+        "importPath": "tensorflow.keras.metrics",
+        "description": "tensorflow.keras.metrics",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "Recall",
+        "importPath": "tensorflow.keras.metrics",
+        "description": "tensorflow.keras.metrics",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "image",
+        "importPath": "tensorflow.keras.preprocessing",
+        "description": "tensorflow.keras.preprocessing",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "script_dir",
+        "kind": 5,
+        "importPath": "src.train_model",
+        "description": "src.train_model",
+        "peekOfCode": "script_dir = os.path.dirname(os.path.abspath(__file__))\nproject_root = os.path.dirname(script_dir)\nDIRETORIO_DATASET = os.path.join(project_root, 'dataset')\nCAMINHO_SALVAR_MODELO = os.path.join(project_root, 'lib', 'models', 'modelo_tea_classifier.h5')\nIMG_WIDTH, IMG_HEIGHT = 224, 224\nTAMANHO_IMAGEM = (IMG_WIDTH, IMG_HEIGHT)\nTAMANHO_LOTE = 20\nNUM_EPOCAS = 45\nif not os.path.exists(DIRETORIO_DATASET):\n    print(f\"Erro: O diretório '{DIRETORIO_DATASET}' não foi encontrado.\")",
+        "detail": "src.train_model",
+        "documentation": {}
+    },
+    {
+        "label": "project_root",
+        "kind": 5,
+        "importPath": "src.train_model",
+        "description": "src.train_model",
+        "peekOfCode": "project_root = os.path.dirname(script_dir)\nDIRETORIO_DATASET = os.path.join(project_root, 'dataset')\nCAMINHO_SALVAR_MODELO = os.path.join(project_root, 'lib', 'models', 'modelo_tea_classifier.h5')\nIMG_WIDTH, IMG_HEIGHT = 224, 224\nTAMANHO_IMAGEM = (IMG_WIDTH, IMG_HEIGHT)\nTAMANHO_LOTE = 20\nNUM_EPOCAS = 45\nif not os.path.exists(DIRETORIO_DATASET):\n    print(f\"Erro: O diretório '{DIRETORIO_DATASET}' não foi encontrado.\")\n    print(\"Verifique se o script está na pasta 'src' e a pasta 'dataset' existe no nível superior.\")",
+        "detail": "src.train_model",
+        "documentation": {}
+    },
+    {
+        "label": "DIRETORIO_DATASET",
+        "kind": 5,
+        "importPath": "src.train_model",
+        "description": "src.train_model",
+        "peekOfCode": "DIRETORIO_DATASET = os.path.join(project_root, 'dataset')\nCAMINHO_SALVAR_MODELO = os.path.join(project_root, 'lib', 'models', 'modelo_tea_classifier.h5')\nIMG_WIDTH, IMG_HEIGHT = 224, 224\nTAMANHO_IMAGEM = (IMG_WIDTH, IMG_HEIGHT)\nTAMANHO_LOTE = 20\nNUM_EPOCAS = 45\nif not os.path.exists(DIRETORIO_DATASET):\n    print(f\"Erro: O diretório '{DIRETORIO_DATASET}' não foi encontrado.\")\n    print(\"Verifique se o script está na pasta 'src' e a pasta 'dataset' existe no nível superior.\")\n    exit()",
+        "detail": "src.train_model",
+        "documentation": {}
+    },
+    {
+        "label": "CAMINHO_SALVAR_MODELO",
+        "kind": 5,
+        "importPath": "src.train_model",
+        "description": "src.train_model",
+        "peekOfCode": "CAMINHO_SALVAR_MODELO = os.path.join(project_root, 'lib', 'models', 'modelo_tea_classifier.h5')\nIMG_WIDTH, IMG_HEIGHT = 224, 224\nTAMANHO_IMAGEM = (IMG_WIDTH, IMG_HEIGHT)\nTAMANHO_LOTE = 20\nNUM_EPOCAS = 45\nif not os.path.exists(DIRETORIO_DATASET):\n    print(f\"Erro: O diretório '{DIRETORIO_DATASET}' não foi encontrado.\")\n    print(\"Verifique se o script está na pasta 'src' e a pasta 'dataset' existe no nível superior.\")\n    exit()\ndiretorio_modelos = os.path.dirname(CAMINHO_SALVAR_MODELO)",
+        "detail": "src.train_model",
+        "documentation": {}
+    },
+    {
+        "label": "TAMANHO_IMAGEM",
+        "kind": 5,
+        "importPath": "src.train_model",
+        "description": "src.train_model",
+        "peekOfCode": "TAMANHO_IMAGEM = (IMG_WIDTH, IMG_HEIGHT)\nTAMANHO_LOTE = 20\nNUM_EPOCAS = 45\nif not os.path.exists(DIRETORIO_DATASET):\n    print(f\"Erro: O diretório '{DIRETORIO_DATASET}' não foi encontrado.\")\n    print(\"Verifique se o script está na pasta 'src' e a pasta 'dataset' existe no nível superior.\")\n    exit()\ndiretorio_modelos = os.path.dirname(CAMINHO_SALVAR_MODELO)\nif not os.path.exists(diretorio_modelos):\n    os.makedirs(diretorio_modelos)",
+        "detail": "src.train_model",
+        "documentation": {}
+    },
+    {
+        "label": "TAMANHO_LOTE",
+        "kind": 5,
+        "importPath": "src.train_model",
+        "description": "src.train_model",
+        "peekOfCode": "TAMANHO_LOTE = 20\nNUM_EPOCAS = 45\nif not os.path.exists(DIRETORIO_DATASET):\n    print(f\"Erro: O diretório '{DIRETORIO_DATASET}' não foi encontrado.\")\n    print(\"Verifique se o script está na pasta 'src' e a pasta 'dataset' existe no nível superior.\")\n    exit()\ndiretorio_modelos = os.path.dirname(CAMINHO_SALVAR_MODELO)\nif not os.path.exists(diretorio_modelos):\n    os.makedirs(diretorio_modelos)\n    print(f\"Diretório '{diretorio_modelos}' criado para salvar o modelo.\")",
+        "detail": "src.train_model",
+        "documentation": {}
+    },
+    {
+        "label": "NUM_EPOCAS",
+        "kind": 5,
+        "importPath": "src.train_model",
+        "description": "src.train_model",
+        "peekOfCode": "NUM_EPOCAS = 45\nif not os.path.exists(DIRETORIO_DATASET):\n    print(f\"Erro: O diretório '{DIRETORIO_DATASET}' não foi encontrado.\")\n    print(\"Verifique se o script está na pasta 'src' e a pasta 'dataset' existe no nível superior.\")\n    exit()\ndiretorio_modelos = os.path.dirname(CAMINHO_SALVAR_MODELO)\nif not os.path.exists(diretorio_modelos):\n    os.makedirs(diretorio_modelos)\n    print(f\"Diretório '{diretorio_modelos}' criado para salvar o modelo.\")\ndatagen = ImageDataGenerator(",
+        "detail": "src.train_model",
+        "documentation": {}
+    },
+    {
+        "label": "diretorio_modelos",
+        "kind": 5,
+        "importPath": "src.train_model",
+        "description": "src.train_model",
+        "peekOfCode": "diretorio_modelos = os.path.dirname(CAMINHO_SALVAR_MODELO)\nif not os.path.exists(diretorio_modelos):\n    os.makedirs(diretorio_modelos)\n    print(f\"Diretório '{diretorio_modelos}' criado para salvar o modelo.\")\ndatagen = ImageDataGenerator(\n    rescale=1./255,\n    rotation_range=20,\n    width_shift_range=0.2,\n    height_shift_range=0.2,\n    shear_range=0.2,",
+        "detail": "src.train_model",
+        "documentation": {}
+    },
+    {
+        "label": "datagen",
+        "kind": 5,
+        "importPath": "src.train_model",
+        "description": "src.train_model",
+        "peekOfCode": "datagen = ImageDataGenerator(\n    rescale=1./255,\n    rotation_range=20,\n    width_shift_range=0.2,\n    height_shift_range=0.2,\n    shear_range=0.2,\n    zoom_range=0.2,\n    horizontal_flip=True,\n    fill_mode='nearest',\n    validation_split=0.2 ",
+        "detail": "src.train_model",
+        "documentation": {}
+    },
+    {
+        "label": "train_generator",
+        "kind": 5,
+        "importPath": "src.train_model",
+        "description": "src.train_model",
+        "peekOfCode": "train_generator = datagen.flow_from_directory(\n    DIRETORIO_DATASET,\n    target_size=TAMANHO_IMAGEM,\n    batch_size=TAMANHO_LOTE,\n    class_mode='binary', \n    subset='training'    \n)\nvalidation_generator = datagen.flow_from_directory(\n    DIRETORIO_DATASET,\n    target_size=TAMANHO_IMAGEM,",
+        "detail": "src.train_model",
+        "documentation": {}
+    },
+    {
+        "label": "validation_generator",
+        "kind": 5,
+        "importPath": "src.train_model",
+        "description": "src.train_model",
+        "peekOfCode": "validation_generator = datagen.flow_from_directory(\n    DIRETORIO_DATASET,\n    target_size=TAMANHO_IMAGEM,\n    batch_size=TAMANHO_LOTE,\n    class_mode='binary',\n    subset='validation'  \n)\nbase_model = MobileNetV2(\n    input_shape=(IMG_WIDTH, IMG_HEIGHT, 3),\n    include_top=False,",
+        "detail": "src.train_model",
+        "documentation": {}
+    },
+    {
+        "label": "base_model",
+        "kind": 5,
+        "importPath": "src.train_model",
+        "description": "src.train_model",
+        "peekOfCode": "base_model = MobileNetV2(\n    input_shape=(IMG_WIDTH, IMG_HEIGHT, 3),\n    include_top=False,\n    weights='imagenet'\n)\nbase_model.trainable = False\ninputs = Input(shape=(IMG_WIDTH, IMG_HEIGHT, 3))\nx = base_model(inputs, training=False)\nx = GlobalAveragePooling2D()(x)\nx = Dropout(0.2)(x)",
+        "detail": "src.train_model",
+        "documentation": {}
+    },
+    {
+        "label": "base_model.trainable",
+        "kind": 5,
+        "importPath": "src.train_model",
+        "description": "src.train_model",
+        "peekOfCode": "base_model.trainable = False\ninputs = Input(shape=(IMG_WIDTH, IMG_HEIGHT, 3))\nx = base_model(inputs, training=False)\nx = GlobalAveragePooling2D()(x)\nx = Dropout(0.2)(x)\noutputs = Dense(1, activation='sigmoid')(x)\nmodel = Model(inputs, outputs)\nmodel.compile(\n    optimizer=Adam(learning_rate=0.0001),\n    loss='binary_crossentropy',",
+        "detail": "src.train_model",
+        "documentation": {}
+    },
+    {
+        "label": "inputs",
+        "kind": 5,
+        "importPath": "src.train_model",
+        "description": "src.train_model",
+        "peekOfCode": "inputs = Input(shape=(IMG_WIDTH, IMG_HEIGHT, 3))\nx = base_model(inputs, training=False)\nx = GlobalAveragePooling2D()(x)\nx = Dropout(0.2)(x)\noutputs = Dense(1, activation='sigmoid')(x)\nmodel = Model(inputs, outputs)\nmodel.compile(\n    optimizer=Adam(learning_rate=0.0001),\n    loss='binary_crossentropy',\n    metrics=['accuracy', Precision(name='precision'), Recall(name='recall')]",
+        "detail": "src.train_model",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "src.train_model",
+        "description": "src.train_model",
+        "peekOfCode": "x = base_model(inputs, training=False)\nx = GlobalAveragePooling2D()(x)\nx = Dropout(0.2)(x)\noutputs = Dense(1, activation='sigmoid')(x)\nmodel = Model(inputs, outputs)\nmodel.compile(\n    optimizer=Adam(learning_rate=0.0001),\n    loss='binary_crossentropy',\n    metrics=['accuracy', Precision(name='precision'), Recall(name='recall')]\n)",
+        "detail": "src.train_model",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "src.train_model",
+        "description": "src.train_model",
+        "peekOfCode": "x = GlobalAveragePooling2D()(x)\nx = Dropout(0.2)(x)\noutputs = Dense(1, activation='sigmoid')(x)\nmodel = Model(inputs, outputs)\nmodel.compile(\n    optimizer=Adam(learning_rate=0.0001),\n    loss='binary_crossentropy',\n    metrics=['accuracy', Precision(name='precision'), Recall(name='recall')]\n)\nprint(\"Resumo do Modelo:\")",
+        "detail": "src.train_model",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "src.train_model",
+        "description": "src.train_model",
+        "peekOfCode": "x = Dropout(0.2)(x)\noutputs = Dense(1, activation='sigmoid')(x)\nmodel = Model(inputs, outputs)\nmodel.compile(\n    optimizer=Adam(learning_rate=0.0001),\n    loss='binary_crossentropy',\n    metrics=['accuracy', Precision(name='precision'), Recall(name='recall')]\n)\nprint(\"Resumo do Modelo:\")\nmodel.summary()",
+        "detail": "src.train_model",
+        "documentation": {}
+    },
+    {
+        "label": "outputs",
+        "kind": 5,
+        "importPath": "src.train_model",
+        "description": "src.train_model",
+        "peekOfCode": "outputs = Dense(1, activation='sigmoid')(x)\nmodel = Model(inputs, outputs)\nmodel.compile(\n    optimizer=Adam(learning_rate=0.0001),\n    loss='binary_crossentropy',\n    metrics=['accuracy', Precision(name='precision'), Recall(name='recall')]\n)\nprint(\"Resumo do Modelo:\")\nmodel.summary()\nprint(\"\\nIniciando o treinamento...\")",
+        "detail": "src.train_model",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "src.train_model",
+        "description": "src.train_model",
+        "peekOfCode": "model = Model(inputs, outputs)\nmodel.compile(\n    optimizer=Adam(learning_rate=0.0001),\n    loss='binary_crossentropy',\n    metrics=['accuracy', Precision(name='precision'), Recall(name='recall')]\n)\nprint(\"Resumo do Modelo:\")\nmodel.summary()\nprint(\"\\nIniciando o treinamento...\")\nhistory = model.fit(",
+        "detail": "src.train_model",
+        "documentation": {}
+    },
+    {
+        "label": "history",
+        "kind": 5,
+        "importPath": "src.train_model",
+        "description": "src.train_model",
+        "peekOfCode": "history = model.fit(\n    train_generator,\n    epochs=NUM_EPOCAS,\n    validation_data=validation_generator\n)\nmodel.save(CAMINHO_SALVAR_MODELO)\nprint(f\"\\nTreinamento concluído e modelo salvo em '{CAMINHO_SALVAR_MODELO}'\")",
+        "detail": "src.train_model",
+        "documentation": {}
+    },
+    {
+        "label": "script_dir",
+        "kind": 5,
+        "importPath": "src.validar_modelo",
+        "description": "src.validar_modelo",
+        "peekOfCode": "script_dir = os.path.dirname(os.path.abspath(__file__))\nproject_root = os.path.dirname(script_dir)\nPASTA_VALIDACAO = os.path.join(project_root, 'dataset/neurotypical')\nCAMINHO_MODELO = os.path.join(project_root, 'lib/models/modelo_tea_classifier.h5')\nCLASSE_VERDADEIRA = 'neurotypical' \nNUM_IMAGENS_TESTE = 50\nIMG_WIDTH, IMG_HEIGHT = 224, 224\nif not os.path.exists(CAMINHO_MODELO):\n    print(f\"Erro: Modelo '{CAMINHO_MODELO}' não encontrado.\")\n    exit()",
+        "detail": "src.validar_modelo",
+        "documentation": {}
+    },
+    {
+        "label": "project_root",
+        "kind": 5,
+        "importPath": "src.validar_modelo",
+        "description": "src.validar_modelo",
+        "peekOfCode": "project_root = os.path.dirname(script_dir)\nPASTA_VALIDACAO = os.path.join(project_root, 'dataset/neurotypical')\nCAMINHO_MODELO = os.path.join(project_root, 'lib/models/modelo_tea_classifier.h5')\nCLASSE_VERDADEIRA = 'neurotypical' \nNUM_IMAGENS_TESTE = 50\nIMG_WIDTH, IMG_HEIGHT = 224, 224\nif not os.path.exists(CAMINHO_MODELO):\n    print(f\"Erro: Modelo '{CAMINHO_MODELO}' não encontrado.\")\n    exit()\nif not os.path.exists(PASTA_VALIDACAO):",
+        "detail": "src.validar_modelo",
+        "documentation": {}
+    },
+    {
+        "label": "PASTA_VALIDACAO",
+        "kind": 5,
+        "importPath": "src.validar_modelo",
+        "description": "src.validar_modelo",
+        "peekOfCode": "PASTA_VALIDACAO = os.path.join(project_root, 'dataset/neurotypical')\nCAMINHO_MODELO = os.path.join(project_root, 'lib/models/modelo_tea_classifier.h5')\nCLASSE_VERDADEIRA = 'neurotypical' \nNUM_IMAGENS_TESTE = 50\nIMG_WIDTH, IMG_HEIGHT = 224, 224\nif not os.path.exists(CAMINHO_MODELO):\n    print(f\"Erro: Modelo '{CAMINHO_MODELO}' não encontrado.\")\n    exit()\nif not os.path.exists(PASTA_VALIDACAO):\n    print(f\"Erro: Pasta de validação '{PASTA_VALIDACAO}' não encontrada.\")",
+        "detail": "src.validar_modelo",
+        "documentation": {}
+    },
+    {
+        "label": "CAMINHO_MODELO",
+        "kind": 5,
+        "importPath": "src.validar_modelo",
+        "description": "src.validar_modelo",
+        "peekOfCode": "CAMINHO_MODELO = os.path.join(project_root, 'lib/models/modelo_tea_classifier.h5')\nCLASSE_VERDADEIRA = 'neurotypical' \nNUM_IMAGENS_TESTE = 50\nIMG_WIDTH, IMG_HEIGHT = 224, 224\nif not os.path.exists(CAMINHO_MODELO):\n    print(f\"Erro: Modelo '{CAMINHO_MODELO}' não encontrado.\")\n    exit()\nif not os.path.exists(PASTA_VALIDACAO):\n    print(f\"Erro: Pasta de validação '{PASTA_VALIDACAO}' não encontrada.\")\n    exit()",
+        "detail": "src.validar_modelo",
+        "documentation": {}
+    },
+    {
+        "label": "CLASSE_VERDADEIRA",
+        "kind": 5,
+        "importPath": "src.validar_modelo",
+        "description": "src.validar_modelo",
+        "peekOfCode": "CLASSE_VERDADEIRA = 'neurotypical' \nNUM_IMAGENS_TESTE = 50\nIMG_WIDTH, IMG_HEIGHT = 224, 224\nif not os.path.exists(CAMINHO_MODELO):\n    print(f\"Erro: Modelo '{CAMINHO_MODELO}' não encontrado.\")\n    exit()\nif not os.path.exists(PASTA_VALIDACAO):\n    print(f\"Erro: Pasta de validação '{PASTA_VALIDACAO}' não encontrada.\")\n    exit()\nprint(\"Carregando modelo...\")",
+        "detail": "src.validar_modelo",
+        "documentation": {}
+    },
+    {
+        "label": "NUM_IMAGENS_TESTE",
+        "kind": 5,
+        "importPath": "src.validar_modelo",
+        "description": "src.validar_modelo",
+        "peekOfCode": "NUM_IMAGENS_TESTE = 50\nIMG_WIDTH, IMG_HEIGHT = 224, 224\nif not os.path.exists(CAMINHO_MODELO):\n    print(f\"Erro: Modelo '{CAMINHO_MODELO}' não encontrado.\")\n    exit()\nif not os.path.exists(PASTA_VALIDACAO):\n    print(f\"Erro: Pasta de validação '{PASTA_VALIDACAO}' não encontrada.\")\n    exit()\nprint(\"Carregando modelo...\")\nmodel = tf.keras.models.load_model(CAMINHO_MODELO)",
+        "detail": "src.validar_modelo",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "src.validar_modelo",
+        "description": "src.validar_modelo",
+        "peekOfCode": "model = tf.keras.models.load_model(CAMINHO_MODELO)\nprint(\"Modelo carregado!\")\narquivos_imagem = [f for f in os.listdir(PASTA_VALIDACAO) if f.lower().endswith(('.png', '.jpg', '.jpeg'))]\nrandom.shuffle(arquivos_imagem)\nimagens_para_testar = arquivos_imagem[:NUM_IMAGENS_TESTE]\nif len(imagens_para_testar) == 0:\n    print(f\"Nenhuma imagem encontrada em '{PASTA_VALIDACAO}'. Verifique o caminho e os arquivos.\")\n    exit()\nprint(f\"\\nIniciando validação em {len(imagens_para_testar)} imagens da classe '{CLASSE_VERDADEIRA}'...\\n\")\nacertos = 0",
+        "detail": "src.validar_modelo",
+        "documentation": {}
+    },
+    {
+        "label": "arquivos_imagem",
+        "kind": 5,
+        "importPath": "src.validar_modelo",
+        "description": "src.validar_modelo",
+        "peekOfCode": "arquivos_imagem = [f for f in os.listdir(PASTA_VALIDACAO) if f.lower().endswith(('.png', '.jpg', '.jpeg'))]\nrandom.shuffle(arquivos_imagem)\nimagens_para_testar = arquivos_imagem[:NUM_IMAGENS_TESTE]\nif len(imagens_para_testar) == 0:\n    print(f\"Nenhuma imagem encontrada em '{PASTA_VALIDACAO}'. Verifique o caminho e os arquivos.\")\n    exit()\nprint(f\"\\nIniciando validação em {len(imagens_para_testar)} imagens da classe '{CLASSE_VERDADEIRA}'...\\n\")\nacertos = 0\ntotal_testado = 0\nfor nome_imagem in imagens_para_testar:",
+        "detail": "src.validar_modelo",
+        "documentation": {}
+    },
+    {
+        "label": "imagens_para_testar",
+        "kind": 5,
+        "importPath": "src.validar_modelo",
+        "description": "src.validar_modelo",
+        "peekOfCode": "imagens_para_testar = arquivos_imagem[:NUM_IMAGENS_TESTE]\nif len(imagens_para_testar) == 0:\n    print(f\"Nenhuma imagem encontrada em '{PASTA_VALIDACAO}'. Verifique o caminho e os arquivos.\")\n    exit()\nprint(f\"\\nIniciando validação em {len(imagens_para_testar)} imagens da classe '{CLASSE_VERDADEIRA}'...\\n\")\nacertos = 0\ntotal_testado = 0\nfor nome_imagem in imagens_para_testar:\n    total_testado += 1\n    caminho_completo = os.path.join(PASTA_VALIDACAO, nome_imagem)",
+        "detail": "src.validar_modelo",
+        "documentation": {}
+    },
+    {
+        "label": "acertos",
+        "kind": 5,
+        "importPath": "src.validar_modelo",
+        "description": "src.validar_modelo",
+        "peekOfCode": "acertos = 0\ntotal_testado = 0\nfor nome_imagem in imagens_para_testar:\n    total_testado += 1\n    caminho_completo = os.path.join(PASTA_VALIDACAO, nome_imagem)\n    img = image.load_img(caminho_completo, target_size=(IMG_WIDTH, IMG_HEIGHT))\n    img_array = image.img_to_array(img)\n    img_array /= 255.0\n    img_batch = np.expand_dims(img_array, axis=0)\n    prediction = model.predict(img_batch, verbose=0)",
+        "detail": "src.validar_modelo",
+        "documentation": {}
+    },
+    {
+        "label": "total_testado",
+        "kind": 5,
+        "importPath": "src.validar_modelo",
+        "description": "src.validar_modelo",
+        "peekOfCode": "total_testado = 0\nfor nome_imagem in imagens_para_testar:\n    total_testado += 1\n    caminho_completo = os.path.join(PASTA_VALIDACAO, nome_imagem)\n    img = image.load_img(caminho_completo, target_size=(IMG_WIDTH, IMG_HEIGHT))\n    img_array = image.img_to_array(img)\n    img_array /= 255.0\n    img_batch = np.expand_dims(img_array, axis=0)\n    prediction = model.predict(img_batch, verbose=0)\n    score = prediction[0][0]",
+        "detail": "src.validar_modelo",
+        "documentation": {}
+    },
+    {
+        "label": "acuracia",
+        "kind": 5,
+        "importPath": "src.validar_modelo",
+        "description": "src.validar_modelo",
+        "peekOfCode": "acuracia = (acertos / total_testado) * 100\nprint(\"\\n--- Relatório Final da Validação ---\")\nprint(f\"Pasta Testada: '{PASTA_VALIDACAO}'\")\nprint(f\"Classe Verdadeira: '{CLASSE_VERDADEIRA}'\")\nprint(f\"Total de Imagens Testadas: {total_testado}\")\nprint(f\"Previsões Corretas: {acertos}\")\nprint(f\"Previsões Incorretas: {total_testado - acertos}\")\nprint(f\"Acurácia nesta classe: {acuracia:.2f}%\")",
+        "detail": "src.validar_modelo",
+        "documentation": {}
+    }
+]

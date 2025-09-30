@@ -4,6 +4,8 @@ from tensorflow.keras.applications import MobileNetV2
 from tensorflow.keras.layers import Input, Dense, GlobalAveragePooling2D, Dropout
 from tensorflow.keras.models import Model
 from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.metrics import Precision, Recall
+import numpy as np
 import os
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -16,7 +18,7 @@ CAMINHO_SALVAR_MODELO = os.path.join(project_root, 'lib', 'models', 'modelo_tea_
 IMG_WIDTH, IMG_HEIGHT = 224, 224
 TAMANHO_IMAGEM = (IMG_WIDTH, IMG_HEIGHT)
 
-TAMANHO_LOTE = 50
+TAMANHO_LOTE = 20
 NUM_EPOCAS = 45
 
 if not os.path.exists(DIRETORIO_DATASET):
@@ -79,7 +81,7 @@ model = Model(inputs, outputs)
 model.compile(
     optimizer=Adam(learning_rate=0.0001),
     loss='binary_crossentropy',
-    metrics=['accuracy']
+    metrics=['accuracy', Precision(name='precision'), Recall(name='recall')]
 )
 
 print("Resumo do Modelo:")
@@ -95,3 +97,6 @@ history = model.fit(
 model.save(CAMINHO_SALVAR_MODELO)
 
 print(f"\nTreinamento concluído e modelo salvo em '{CAMINHO_SALVAR_MODELO}'")
+
+
+
