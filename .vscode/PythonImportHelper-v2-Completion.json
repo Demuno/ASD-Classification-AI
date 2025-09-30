@@ -1,5 +1,55 @@
 [
     {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
         "label": "tensorflow",
         "kind": 6,
         "isExtraImport": true,
@@ -89,24 +139,6 @@
         "documentation": {}
     },
     {
-        "label": "numpy",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "numpy",
-        "description": "numpy",
-        "detail": "numpy",
-        "documentation": {}
-    },
-    {
-        "label": "os",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
-        "documentation": {}
-    },
-    {
         "label": "image",
         "importPath": "tensorflow.keras.preprocessing",
         "description": "tensorflow.keras.preprocessing",
@@ -121,6 +153,51 @@
         "importPath": "random",
         "description": "random",
         "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "prepare_image",
+        "kind": 2,
+        "importPath": "api.app",
+        "description": "api.app",
+        "peekOfCode": "def prepare_image(image):\n    if image.mode != \"RGB\":\n        image = image.convert(\"RGB\")\n    image = image.resize((IMG_WIDTH, IMG_HEIGHT))\n    image_array = np.asarray(image)\n    image_array = image_array / 255.0\n    image_array = np.expand_dims(image_array, axis=0)\n    return image_array\n@app.route('/predict', methods=['POST'])\ndef predict():",
+        "detail": "api.app",
+        "documentation": {}
+    },
+    {
+        "label": "predict",
+        "kind": 2,
+        "importPath": "api.app",
+        "description": "api.app",
+        "peekOfCode": "def predict():\n    if model is None:\n        return jsonify({'error': 'Modelo não foi carregado. Verifique os logs do servidor.'}), 500\n    if 'file' not in request.files:\n        return jsonify({'error': 'Nenhum arquivo enviado'}), 400\n    file = request.files['file']\n    if file.filename == '':\n        return jsonify({'error': 'Nome do arquivo está vazio'}), 400\n    try:\n        image = Image.open(file.stream)",
+        "detail": "api.app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "api.app",
+        "description": "api.app",
+        "peekOfCode": "app = Flask(__name__)\npath_script = os.path.dirname(os.path.abspath(__file__))\npath_model = os.path.join(path_script, '..', 'lib', 'models', 'modelo_tea_classifier.h5')\ntry:\n    print(\"Carregando o modelo Keras...\")\n    model = tf.keras.models.load_model(path_model)\n    print(\"Modelo carregado com sucesso!\")\nexcept Exception as e:\n    print(f\"Erro ao carregar o modelo: {e}\")\n    model = None",
+        "detail": "api.app",
+        "documentation": {}
+    },
+    {
+        "label": "path_script",
+        "kind": 5,
+        "importPath": "api.app",
+        "description": "api.app",
+        "peekOfCode": "path_script = os.path.dirname(os.path.abspath(__file__))\npath_model = os.path.join(path_script, '..', 'lib', 'models', 'modelo_tea_classifier.h5')\ntry:\n    print(\"Carregando o modelo Keras...\")\n    model = tf.keras.models.load_model(path_model)\n    print(\"Modelo carregado com sucesso!\")\nexcept Exception as e:\n    print(f\"Erro ao carregar o modelo: {e}\")\n    model = None\nIMG_WIDTH, IMG_HEIGHT = 224, 224",
+        "detail": "api.app",
+        "documentation": {}
+    },
+    {
+        "label": "path_model",
+        "kind": 5,
+        "importPath": "api.app",
+        "description": "api.app",
+        "peekOfCode": "path_model = os.path.join(path_script, '..', 'lib', 'models', 'modelo_tea_classifier.h5')\ntry:\n    print(\"Carregando o modelo Keras...\")\n    model = tf.keras.models.load_model(path_model)\n    print(\"Modelo carregado com sucesso!\")\nexcept Exception as e:\n    print(f\"Erro ao carregar o modelo: {e}\")\n    model = None\nIMG_WIDTH, IMG_HEIGHT = 224, 224\ndef prepare_image(image):",
+        "detail": "api.app",
         "documentation": {}
     },
     {
